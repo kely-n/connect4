@@ -19,12 +19,12 @@ handleClick(e) {
        this.setState({
          color: 'black'
        });
-      this.props.updateColor('black');
+      this.props.updateColor('black', this.state.row, this.state.col);
       }else{
         this.setState({
            color: 'red'
         });
-     this.props.updateColor('red');
+     this.props.updateColor('red', this.state.row, this.state.col);
       }
   }
 }
